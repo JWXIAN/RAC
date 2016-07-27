@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7P-Ff-NJr">
+                                <rect key="frame" x="277" y="184" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gjE-og-ijQ">
+                                <rect key="frame" x="187" y="242" width="227" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="DAa-DB-qle"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gjE-og-ijQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9hO-qx-iv4"/>
+                            <constraint firstItem="B7P-Ff-NJr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F32-C3-gWO"/>
+                            <constraint firstItem="gjE-og-ijQ" firstAttribute="top" secondItem="B7P-Ff-NJr" secondAttribute="bottom" constant="28" id="XB5-uA-OnF"/>
+                            <constraint firstItem="B7P-Ff-NJr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="164" id="YrI-uK-9as"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="B7P-Ff-NJr" id="Rye-bz-5en"/>
+                        <outlet property="textField" destination="gjE-og-ijQ" id="RvK-i1-d8h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="382"/>
+        </scene>
+    </scenes>
+</document>
